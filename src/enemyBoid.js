@@ -18,6 +18,6 @@ class EnemyBoid extends Boid {
 
     //health
     this.health = 100;
-    this.healthDecrease = random(0.1, 1);
+    this.healthDecrease = random(0.01, 0.1);
   }
 }
