@@ -9,7 +9,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   addEnemyBoids(random(1,3));
-  addNormalBoid(random(15, 25));
+  addNormalBoid(random(15, 45));
   addFoodBoids(random(2,4));
 }
 
@@ -130,7 +130,7 @@ function updateNormalBoid() {
     normalBoids[i].applyForce(goodFood);
 
     // duplicate
-    if (normalBoids.length < 30) normalBoids[i].duplicate(normalBoids);
+    if (normalBoids.length < 40) normalBoids[i].duplicate(normalBoids);
 
     // dead
     if (normalBoids[i].dead()) {
